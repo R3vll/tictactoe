@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe vs AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+            <p class="subtitle">You (X) vs AI (O)</p>
+        </header>
+
+        <div class="status" id="status" aria-live="polite">
+            Your turn (X)
+        </div>
+
+        <div class="board" id="board" role="grid" aria-label="Tic-tac-toe board">
+            <button class="cell" data-index="0" aria-label="Row 1, Column 1"></button>
+            <button class="cell" data-index="1" aria-label="Row 1, Column 2"></button>
+            <button class="cell" data-index="2" aria-label="Row 1, Column 3"></button>
+            <button class="cell" data-index="3" aria-label="Row 2, Column 1"></button>
+            <button class="cell" data-index="4" aria-label="Row 2, Column 2"></button>
+            <button class="cell" data-index="5" aria-label="Row 2, Column 3"></button>
+            <button class="cell" data-index="6" aria-label="Row 3, Column 1"></button>
+            <button class="cell" data-index="7" aria-label="Row 3, Column 2"></button>
+            <button class="cell" data-index="8" aria-label="Row 3, Column 3"></button>
+        </div>
+
+        <div class="controls">
+            <button id="resetBtn" class="btn btn-primary">New Game</button>
+        </div>
+
+        <div class="score">
+            <span>You: <span id="scoreX">0</span></span>
+            <span>Draws: <span id="scoreDraw">0</span></span>
+            <span>AI: <span id="scoreO">0</span></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
